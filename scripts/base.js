@@ -14,7 +14,7 @@ class Character {
 }
 
 window.onload = (event) => {
-    loadCharacters(window.location.origin + "/data/PCs.json");
+    loadCharacters(window.location.href + "/data/PCs.json");
 };
 
 const loadCharacters = (filename) => {

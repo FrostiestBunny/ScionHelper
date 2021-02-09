@@ -1,5 +1,5 @@
 class Character {
-    constructor(name, str, agi, vit, mag, lck, hp, mana, soak, fp) {
+    constructor({name, str, agi, vit, mag, lck, hp, mana, soak, fp}) {
         this.name = name;
         this.str = str;
         this.agi = agi;
@@ -14,11 +14,14 @@ class Character {
 }
 
 window.onload = (event) => {
-    loadCharacters(window.location.href + "/data/PCs.json");
+    let characters = loadCharacters();
+    console.log(characters);
 };
 
-const loadCharacters = (filename) => {
-    fetch(filename)
-        .then(response => response.json())
-        .then(data => console.log(data));
-}
+const loadCharacters = () => {
+    let characters = [];
+    for (const c of charactersData) {
+        characters.push(new Character(c));
+    }
+    return characters;
+};

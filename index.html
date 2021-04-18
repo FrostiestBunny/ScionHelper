@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
 
-  <title>Accidental Magical Girl Helper</title>
+  <title>Scion Helper</title>
   <meta name="author" content="ZackUnfair">
 
   <link rel="stylesheet" href="base.css">
@@ -18,8 +18,77 @@
 <body>
     <h1>The Beginning of Greatness</h1>
 
+    <div class="main-element">
+      <h2>Actions</h2>
+      <p>
+        <ul>
+          <li>Form your dice pool for most Challenges by matching a relevant Skill with any relevant Attribute</li>
+          <li>Spend successes to match the Difficulty of an Challenge</li>
+          <li>Buy off Complications with extra successes after beating the Difficulty</li>
+          <li>Enhancements grant extra successes only when you've rolled at least 1 success (max 5)</li>
+          <li>For mixed actions (doing two things at the same time), determine the dice pools and roll the smaller one for both actions</li>
+          <li>Leftover successes can be spent on Stunts, such as:</li>
+          <ul>
+            <li>Making someone's life more complicated by adding a Complication</li>
+            <li>Helping an ally with their next action by adding Enhancements</li>
+            <li>Or simply making someone's life harder by increasing the Difficulty</li>
+          </ul>
+          <li>Any extra successes not spent on Stunts will determine how awesome your action was</li>
+          <li>You can assist your friends by adding Enhancements to their action (max 3)</li>
+          <li>Complex actions encompass big projects, like investigations</li>
+          <ul>
+            <li>Complex actions are made up of intervals, each of them is its own Challenge to beat</li>
+            <li>Completing intervals grants you Milestones</li>
+            <li>You succeed at the complex action by acquiring enough Milestones to match its Difficulty</li>
+          </ul>
+        </ul>
+        <h3>Failure</h3>
+        <ul>
+          <li>Every time you fail you gain Momentum for the Momentum pool that's shared by everyone</li>
+          <li>Failing a skill you have a specialty in grants 1 extra Momentum</li>
+          <li>Rolling a 1 and no successes is a botch - an extreme failure that gives you 3 Momentum</li>
+          <li>Momentum can be spent by any of the players to:</li>
+          <ul>
+            <li>Add extra dice to any roll, 1 die per Momentum, if everyone agrees</li>
+            <li>Add an extra interval to a complex action for 3 Momentum</li>
+            <li>Activate Knacks which require Momentum (no need for agreement)</li>
+          </ul>
+        </ul>
+      </p>
+    </div>
 
-  <script src="data/PCs.js"></script>
+    <div class="main-element">
+      <h2>Combat</h2>
+      <p>
+        <ul>
+          <li>You can take one simple action (mostly attack) and as many reflexive actions as you want in a turn</li>
+          <li>Moving one range band is a reflexive action (close to short, short to medium, etc)</li>
+          <li>Disengaging (moving away from an enemy who's at Close range to you) might sometimes require a roll and become a simple action</li>
+          <li>Activating a Knack is a reflexive action unless stated otherwise</li>
+          <li><a href="combat.html">Combat Stunts</a></li>
+        </ul>
+      </p>
+    </div>
+
+    <div class="main-element">
+      <h2>Paths</h2>
+      <p>
+        <ul>
+          <li>You always have access to anything relevant to your path (money if you're rich, and so on)</li>
+          <li>Once per session, you can invoke your path to call upon a connection or a specific Contact (Skill + 2 dice)</li>
+          <li>Once per session, you can invoke your path to add two dice to any relevant roll</li>
+        </ul>
+      </p>
+      <h2>Followers</h2>
+      <p>
+        <ul>
+          <li>Your dice poll is an Attribute + Leadership or Follower's rating if higher when using your Followers</li>
+          <li>They always act on your turn and take up your turn</li>
+        </ul>
+      </p>
+    </div>
+
+
   <script src="scripts/base.js"></script>
 </body>
 </html>

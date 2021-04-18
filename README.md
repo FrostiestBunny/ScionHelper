@@ -1,1 +1,1 @@
-# AccidentalMagicalGirlHelper
+# Scion Helper

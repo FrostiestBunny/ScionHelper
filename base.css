@@ -1,8 +1,34 @@
 body {
     background-color: #0D1117;
     color: floralwhite;
+    font-size: 1.5em;
 }
 
 h1 {
     text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+a {
+    color: green;
+}
+
+a:hover {
+    color: rgb(90, 231, 90);
+}
+
+.main-element {
+    margin: auto;
+    width: 50%;
 }
